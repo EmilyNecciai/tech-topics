@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
     <title>TechTopics Blog</title>
 </head>
 
 <nav class="navbar is-black" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
+    <div class="navbar-brand m-3">
       <a class="navbar-item" href="https://bulma.io">
         <i class="fas fa-laptop" width="112" height="28"></i> <span>TechTopics</span>
       </a>
@@ -34,27 +35,6 @@
           Dashboard
         </a>
   
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            More
-          </a>
-  
-          <div class="navbar-dropdown">
-            <a class="navbar-item">
-              About
-            </a>
-            <a class="navbar-item">
-              Jobs
-            </a>
-            <a class="navbar-item">
-              Contact
-            </a>
-            <hr class="navbar-divider">
-            <a class="navbar-item">
-              Report an issue
-            </a>
-          </div>
-        </div>
       </div>
   
       <div class="navbar-end">
@@ -66,6 +46,10 @@
             <a class="button is-light">
               Log in
             </a>
+            <a class="button is-light">
+              Log Out
+            </a>
+
           </div>
         </div>
       </div>
@@ -75,7 +59,7 @@
   <body>
     <div class="container">
 
-      <article class="message is-dark mt-3">
+      <article class="message is-dark m-3">
         <div class="message-header">
           <p>Dark</p>
           <button class="delete" aria-label="delete"></button>
@@ -87,6 +71,20 @@
           <a>Open article.</a>
         </div>
       </article>
+
+      <article class="message is-dark m-3">
+        <div class="message-header">
+          <p>Dark</p>
+          <button class="delete" aria-label="delete"></button>
+        </div>
+        <div class="message-body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+        </div>
+        <div class="message-body">
+          <a>Open article.</a>
+        </div>
+      </article>
+
   
 
   
