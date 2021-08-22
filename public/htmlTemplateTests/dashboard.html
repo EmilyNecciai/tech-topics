@@ -2,92 +2,113 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="./styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
-    <title>TechTopics Blog</title>
+  <title>TechTopics Blog</title>
 </head>
 
 <nav class="navbar is-black" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand m-3">
-      <a class="navbar-item" href="https://bulma.io">
-        <i class="fas fa-laptop" width="112" height="28"></i> <span>TechTopics</span>
+  <div class="navbar-brand m-3">
+    <a class="navbar-item" href="https://bulma.io">
+      <i class="fas fa-laptop" width="112" height="28"></i> <span>TechTopics</span>
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        Home
       </a>
-  
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
+
+      <a class="navbar-item">
+        Dashboard
       </a>
-    </div>
-  
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item">
-          Home
-        </a>
-  
-        <a class="navbar-item">
-          Dashboard
-        </a>
-  
-      </div>
-  
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-primary">
-              <strong>Sign up</strong>
-            </a>
-            <a class="button is-light">
-              Log in
-            </a>
-            <a class="button is-light">
-              Log Out
-            </a>
 
-          </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary">
+            <strong>Sign up</strong>
+          </a>
+          <a class="button is-light">
+            Log in
+          </a>
+          <a class="button is-light">
+            Log Out
+          </a>
+
         </div>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <body>
-    <div class="container">
+<body>
 
-      <article class="message is-dark m-3">
-        <div class="message-header">
-          <p>Dark</p>
-          <button class="delete" aria-label="delete"></button>
-        </div>
-        <div class="message-body">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-        </div>
-        <div class="message-body">
-          <a>Open article.</a>
-        </div>
-      </article>
+  <div class="container">
+    <div class="box m-3">
+      <h2>Create New Post</h2>
 
-      <article class="message is-dark m-3">
-        <div class="message-header">
-          <p>Dark</p>
-          <button class="delete" aria-label="delete"></button>
+      <form class="new-post-form">
+        <div>
+          <label for="post-title" class="label">Title</label>
+          <input class="input" type="text" id="post-title" name="post-title" />
         </div>
-        <div class="message-body">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+        <div>
+          <label for="post-url" class="label">Custom Post URL (for example, enter my-post for a URL of
+            www.site.com/my-post)</label>
+          <input class="input" id="post-url" name="post-url" />
         </div>
-        <div class="message-body">
-          <a>Open article.</a>
+        <div>
+          <label for="post-content" class="label">Post Content</label>
+          <textarea class="textarea" id="post-content" name="post-content"></textarea>
         </div>
-      </article>
 
-  
+        <button type="submit" class="btn button is-primary mt-3">Create</button>
+      </form>
+      </section>
 
-  
+
     </div>
-  </body>
+
+    {{#if posts.length}}
+    <div class="box m-3">
+      <h2>Your Posts</h2>
+      <ol>
+        {{#each posts as |post|}}
+        <li>
+          {{> post-info post}}
+          <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+        </li>
+        {{/each}}
+      </ol>
+    </div>
+
+  </div>
+</body>
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>TechTopics</strong> by <a href="https://jgthms.com">Emily Mayeski</a>. View the source code on
+      <a href="https://github.com/EmilyNecciai/tech-topics">Github</a>.
+    </p>
+  </div>
+</footer>
+
+<script src="./menu-burger.js"></script>
+
 </html>
