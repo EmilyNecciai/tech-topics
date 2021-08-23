@@ -63,14 +63,12 @@ const commentdata = [
     post_id: 4
   },
   {
-    comment_text:
-      'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.',
+    comment_text: 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.',
     user_id: 4,
     post_id: 9
   },
   {
-    comment_text:
-      'Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.',
+    comment_text: 'Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.',
     user_id: 5,
     post_id: 14
   },
@@ -85,8 +83,7 @@ const commentdata = [
     post_id: 2
   },
   {
-    comment_text:
-      'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.',
+    comment_text: 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.',
     user_id: 2,
     post_id: 20
   },
@@ -96,14 +93,12 @@ const commentdata = [
     post_id: 11
   },
   {
-    comment_text:
-      'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.',
+    comment_text: 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.',
     user_id: 5,
     post_id: 13
   },
   {
-    comment_text:
-      'Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.',
+    comment_text: 'Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.',
     user_id: 9,
     post_id: 16
   },
@@ -123,14 +118,12 @@ const commentdata = [
     post_id: 8
   },
   {
-    comment_text:
-      'Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique.',
+    comment_text: 'Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique.',
     user_id: 8,
     post_id: 10
   },
   {
-    comment_text:
-      'Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.',
+    comment_text: 'Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.',
     user_id: 1,
     post_id: 15
   },
@@ -210,14 +203,12 @@ const commentdata = [
     post_id: 19
   },
   {
-    comment_text:
-      'Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.',
+    comment_text: 'Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.',
     user_id: 5,
     post_id: 4
   },
   {
-    comment_text:
-      'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.',
+    comment_text: 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.',
     user_id: 2,
     post_id: 11
   },
@@ -232,8 +223,7 @@ const commentdata = [
     post_id: 6
   },
   {
-    comment_text:
-      'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam.',
+    comment_text: 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam.',
     user_id: 7,
     post_id: 9
   },
@@ -248,8 +238,7 @@ const commentdata = [
     post_id: 1
   },
   {
-    comment_text:
-      'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus.',
+    comment_text: 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus.',
     user_id: 2,
     post_id: 19
   },
