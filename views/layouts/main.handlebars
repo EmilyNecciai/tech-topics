@@ -6,13 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="./styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
     <title>TechTopics Blog</title>
+    <style>
+        html {
+            background-color: rgb(200, 200, 200);
+        }
+    </style>
 </head>
 
-<nav class="navbar is-black" role="navigation" aria-label="main navigation">
+<nav class="navbar is-black wrapper" role="navigation" aria-label="main navigation">
     <div class="navbar-brand m-3">
         <a class="navbar-item" href="/">
             <i class="fas fa-laptop" width="112" height="28"></i> <span>TechTopics</span>
@@ -27,7 +31,7 @@
 
     <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-            <a href="/home" class="navbar-item">
+            <a href="/" class="navbar-item">
                 Home
             </a>
             {{#if loggedIn}}
@@ -43,11 +47,11 @@
                 <div class="buttons">
 
                     {{#if loggedIn}}
-                    <a href="/login" class="button is-light">
+                    <a id="logout" class="button is-light">
                         Log Out
                     </a>
                     {{else}}
-                    <a class="button is-primary">
+                    <a href="/signup" class="button is-primary">
                         <strong>Sign up</strong>
                     </a>
 
@@ -62,7 +66,9 @@
 </nav>
 
 <body>
-    {{{ body }}}
+    <div class="container">
+        {{{ body }}}
+    </div>
 </body>
 
 <footer class="footer">
@@ -74,5 +80,15 @@
     </div>
 </footer>
 
-<script src="/javascript/"></script>
+
+{{#if loggedIn}}
+<script src="/javascript/logout.js"></script>
+{{else}}
+<script src="/javascript/login.js"></script>
+<script src="/javascript/signup.js"></script>
+{{/if}}
+
+
+<script src="/javascript/menu-burger.js"></script>
+
 </html>

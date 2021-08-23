@@ -20,12 +20,9 @@ Post.init(
       post_url: {
         type: DataTypes.STRING,
         allowNull: false,
-        validate: {
-          isURL: true
-        }
       },
       post_content: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false,
       },
       user_id: {
