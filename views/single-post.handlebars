@@ -1,32 +1,12 @@
 {{> post-info post}}
 
 {{#if loggedIn}}
-
 <div class="box m-3">
-  <article class="media">
-
-    <form class="comment-form">
-
-      <div class="media-content">
-        <div class="field">
-          <p class="control">
-            <textarea class="textarea" name="comment-body"></textarea>
-          </p>
-        </div>
-
-        <div class="field">
-          <p class="control">
-            <button type="submit" class="button">Add Comment</button>
-          </p>
-        </div>
-      </div>
-
-    </form>
-  </article>
-
+  <form class="comment-form m-3">
+    <textarea class="textarea" name="comment-body"></textarea>
+    <button type="submit" class="button mt-3 is-primary">Add Comment</button>
+  </form>
 </div>
-
-
 {{/if}}
 
 {{> comments post.comments}}
