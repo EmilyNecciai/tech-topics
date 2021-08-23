@@ -1,9 +1,11 @@
-<article class="post">
-  <div class="title">
-    <a href="{{post_url}}" target="_blank">{{title}}</a>
-    <span>({{format_url post_url}})</span>
+<article class="post message is-dark m-3">
+  <div class="title message-header">
+    <a href="/post/{{id}}" target="_blank" class="content is-large mb-0">{{title}}</a>
   </div>
-  <div class="meta">
+  <div class="message-body">
+    {{post_content}}
+  </div>
+  <div class="meta message-body">
     Written by {{user.username}} on {{format_date created_at}}
     |
     <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
