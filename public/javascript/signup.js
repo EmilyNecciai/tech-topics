@@ -21,7 +21,7 @@ async function signupFormHandler(event) {
 
       document.location.replace('/dashboard/');
     } else {
-      alert(response.statusText);
+      console.log(response.statusText);
       // console.log(response);
       // console.log(response.statusText);
 

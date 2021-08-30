@@ -1,38 +1,40 @@
+<div class="box m-3">
+  <h2 class="content is-large">Create New Post</h2>
+
+  <form class="new-post-form">
+    <div>
+      <label for="post-title" class="label">Title</label>
+      <input class="input" type="text" id="post-title" name="post-title" />
+    </div>
+    <div>
+      <label for="post-content" class="label">Post Content</label>
+      <textarea class="textarea" id="post-content" name="post-content"></textarea>
+    </div>
+
+    <button type="submit" class="btn button is-primary mt-3">Create</button>
+  </form>
+  </section>
+
+
+</div>
+
+{{#if posts.length}}
+<div class="box m-3">
+  <h2 class="content is-large">Your Posts</h2>
   <div class="box m-3">
-    <h2 class="content is-large">Create New Post</h2>
-
-    <form class="new-post-form">
-      <div>
-        <label for="post-title" class="label">Title</label>
-        <input class="input" type="text" id="post-title" name="post-title" />
-      </div>
-      <div>
-        <label for="post-content" class="label">Post Content</label>
-        <textarea class="textarea" id="post-content" name="post-content"></textarea>
-      </div>
-
-      <button type="submit" class="btn button is-primary mt-3">Create</button>
-    </form>
-    </section>
-
-
+    {{#each posts as |post|}}
+    <div>
+      {{> post-info post}}
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit Post</a>
+    </div>
+    {{/each}}
   </div>
+</div>
+{{/if}}
 
-  {{#if posts.length}}
-  <div class="box m-3">
-    <h2 class="content is-large">Your Posts</h2>
-    <ol>
-      {{#each posts as |post|}}
-      <li>
-        {{> post-info post}}
-        <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
-      </li>
-      {{/each}}
-    </ol>
-  </div>
-  {{/if}}
 
+{{#if comments.length}}
+<p>hi!</p>
+{{/if}}
 
 <script src="/javascript/add-post.js"></script>
-
-
