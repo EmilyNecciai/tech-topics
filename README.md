@@ -12,7 +12,7 @@ Module 14 MVC Challenge - a Tech Blog.
 ## Project Description
 This tech blog allows you to edit and post blogs. You can also leave comments on your own blog or the blogs of others.
 
-![App Walkthrough]()
+![App Walkthrough](https://github.com/EmilyNecciai/tech-topics/blob/757144cd948ec76142ef1ff8cd502eae4577346c/public/img/Module14.gif)
 
 ### Tech Used
 
